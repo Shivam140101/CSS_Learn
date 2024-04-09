@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        height: 75px;
+        width: 75px;
+        border: 2px solid black;
+        margin: 5px;
+      }
+      #container {
+        height: 600px;
+        width: 800px;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 80px 100px;
+        grid-template-rows: 50px 100px;
+      }
+      #heading {
+        text-align: center;
+        margin-left: 20px;
+      }
+      #div1 {
+        background-color: yellowgreen;
+        order: 4;
+      }
+      #div2 {
+        background-color: gold;
+      }
+      #div3 {
+        background-color: slateblue;
+        order: 1;
+      }
+      #div4 {
+        background-color: tomato;
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Grid container</h1>
+    <div id="container">
+      <div id="div1" class="box">Flex Item 1</div>
+      <div id="div2" class="box">Flex Item 2</div>
+      <div id="div3" class="box">Flex Item 3</div>
+      <div id="div4" class="box">Flex Item 4</div>
+    </div>
+  </body>
+</html>

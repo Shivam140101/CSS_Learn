@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pseudo{
+            height: 30px;
+            width: 100px;
+            background-color: plum;
+            border: 2px solid ;
+            border-radius: 10px;
+
+            /*
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-timing-function: steps(4);
+            transition-delay: 1s;
+            */
+
+            transition: all 1s ease-in-out 0s;
+            
+        }
+        .pseudo:hover{
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+        }
+        .pseudo:active{
+            background-color: royalblue;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <button class="pseudo">Pseudo Class</button>
+</body>
+</html>
